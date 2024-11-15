@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f5;
+        }
+
+        .login-container {
+            display: flex;
+            width: 900px;
+            height: 500px;
+            background-color: #e7d6ff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);   
+        }
+
+        /* Left Side:  */
+        .illustration {
+            width: 50%;
+            height: 100%;
+            display: flex;  
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .illustration img {
+            width: 420px;
+            height: 470px;
+            border-radius:15px ;
+            
+        }
+
+        /* Right Side:*/
+        .login-form {
+            width: 50%;
+            padding: 50px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            color: #494848;
+        }
+
+        .login-form h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .login-form p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            
+        }
+
+        .login-form .sign-in-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff6e6e;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 10px;
+            
+        }
+
+        .social-login  {
+          font-size: 2rem;
+            display: flex;
+            justify-content: space-evenly; 
+            
+        }   
+
+        .register-link {
+           position: absolute;
+            top: 10px;
+            text-align: right;
+            right: 20px;
+            font-size: 0.9rem;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .password-recovery {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .password-recovery a {
+            color: #34373a;
+            text-decoration: none;  
+        }
+
+        .password-recovery a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side: Illustration -->
+        <div class="illustration">
+            <img src="3d.png" alt="Illustration">
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="login-form">
+            <div class="register-link">
+                Not a member? <a href="#">Register now</a>
+            </div>
+            <h2>Hello Again!</h2>
+            <p>Welcome back, you've been missed!</p>
+            <input type="text" placeholder="Enter username" required>
+            <input type="password" placeholder="Password" required>
+            <div class="password-recovery">
+                <a href="#">Recovery Password</a>
+            </div><br><br>
+            <button class="sign-in-btn">Sign In</button>
+            <p style="text-align: center; margin-top: 20px;">Or continue with</p> 
+            <div class="social-login">
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-apple"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
